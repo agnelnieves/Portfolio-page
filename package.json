@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-page",
+  "version": "1.0.0",
+  "description": "Portfolio page project for Udacity",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agnelnieves/Portfolio-page.git"
+  },
+  "author": "Agnel Nieves Fuentes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agnelnieves/Portfolio-page/issues"
+  },
+  "homepage": "https://github.com/agnelnieves/Portfolio-page#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
