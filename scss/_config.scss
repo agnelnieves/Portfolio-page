@@ -4,11 +4,10 @@
 
 $primary-color: #191b1d;
 $secondary-color: #ef2d56;
-$white: #fff;
 
 // Home page background
 $show-home-image: true;
-// TODO: Change 'gray' for url(../img/home-background.jpg)
+// TODO: Add dynamic background
 $home-image: url('http://agnelnieves.com/images/home/agnel-slider.jpg');
 $background-opacity: 0.6;
 
@@ -34,6 +33,15 @@ $background-opacity: 0.6;
                 background: rgba($primary-color, $background-opacity);
             }
         }
+    }
+}
+
+// Set text color
+@function set-text-color($color) {
+    @if (lightness($color) > 40 ) {
+        @return #000;
+    } @else {
+        @return #fff;
     }
 }
 

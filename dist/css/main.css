@@ -127,7 +127,7 @@
 
 body {
   background-color: #191b1d;
-  color: white;
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -164,6 +164,8 @@ h3 {
 a {
   color: #fff;
   text-decoration: none; }
+  a:hover {
+    color: #ef2d56; }
 
 header {
   position: fixed;
@@ -179,7 +181,8 @@ main {
   main .social-icons {
     margin-top: 1rem; }
     main .social-icons a {
-      padding: 0.4rem; }
+      padding: 0.4rem;
+      color: #fff; }
       main .social-icons a:hover {
         color: #ef2d56;
         transition: all 0.3s ease-out; }
