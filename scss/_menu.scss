@@ -10,9 +10,17 @@
     .btn-line {
         width: 28px;
         border-radius: 10px;
-        height: 3px;
+        height: 4px;
         margin: 0 0 5px 0;
         background: set-text-color($primary-color);
+
+        &:nth-child(1) {
+            width: 20px;
+        }
+
+        &:nth-child(2) {
+            width: 25px;
+        }
     }
 
     // Rotate Into X With Menu lines
@@ -22,17 +30,20 @@
         .btn-line {
             // Line 1
             &:nth-child(1) {
+                width: 28px;
                 transform: rotate(45deg) translate(5px, 5px);
             }
 
             // Line 2
             &:nth-child(2) {
+                width: 28px;
                 opacity: 0;
             }
 
             // Line 3
             &:nth-child(3) {
-                transform: rotate(-45deg) translate(7px, -6px);
+                width: 28px;
+                transform: rotate(-45deg) translate(7px, -8px);
             }
 
         }
@@ -44,7 +55,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.99;
     visibility: hidden;
 
     &.show {

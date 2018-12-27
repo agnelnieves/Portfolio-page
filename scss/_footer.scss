@@ -1,0 +1,33 @@
+footer {
+    background-color: $white-color;
+    color: $primary-color-light;
+    .container {
+        display: flex;
+        .column {
+            text-align: center;
+
+            .social {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                .icon {
+                    padding: 5px 12px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    margin: 10px 1.5px;
+                    @include easeOut;
+
+                    &:hover {
+                        background-color: $secondary-color;
+                        color: #fff;
+                        transform: translateY(-2.5px);
+                    }
+
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,6 @@
 // Widescreens
 @include mediaXl {
+    // width: 25%;
 
 }
 
@@ -10,6 +11,7 @@
 
 // Tablets & Small Laptops
 @include mediaMd {
+
     main {
         align-items: center;
         text-align: center;
@@ -47,5 +49,25 @@
 @include mediaSm {
     main#home h1 {
         margin-top: 5vh;
+    }
+
+    .works {
+        flex-wrap: wrap;
+        .project {
+            width: 100%!important;
+            img {
+                // width: 100%;
+            }
+        }
+
+    }
+
+    footer {
+        .container {
+            flex-wrap: wrap;
+            .column {
+                width: 100%!important;
+            }
+        }
     }
 }
