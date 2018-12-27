@@ -35,3 +35,12 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
+var typed = new Typed('#typed', {
+stringsElement: '#typed-strings',
+startDelay: 1000,
+loop: true,
+loopCount: false,
+typeSpeed: 100,
+backSpeed: 100
+});

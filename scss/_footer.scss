@@ -5,7 +5,6 @@ footer {
         display: flex;
         .column {
             text-align: center;
-
             .social {
                 display: flex;
                 justify-content: center;
@@ -19,13 +18,11 @@ footer {
                     cursor: pointer;
                     margin: 10px 1.5px;
                     @include easeOut;
-
                     &:hover {
                         background-color: $secondary-color;
                         color: #fff;
                         transform: translateY(-2.5px);
                     }
-
                 }
             }
         }

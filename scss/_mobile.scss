@@ -1,16 +1,44 @@
 // Widescreens
 @include mediaXl {
-    // width: 25%;
+
+    .hero{
+        .logo {
+            width: 20%;
+        }
+    }
+    .works {
+        .project {
+            height: 18rem;
+        }
+    }
 
 }
 
 // Desktops & Laptops
 @include mediaLg {
 
+    .hero{
+        .logo {
+            width: 20%;
+        }
+    }
+
+    .works {
+        .project {
+            height: 15rem;
+        }
+    }
+
 }
 
 // Tablets & Small Laptops
 @include mediaMd {
+
+    .hero{
+        .logo {
+            width: 30%;
+        }
+    }
 
     main {
         align-items: center;
@@ -43,23 +71,32 @@
         height: 25vh;
         transform: translate3d(100%, 0, 0);
     }
+
+    .works {
+        flex-wrap: wrap;
+        .project {
+            height: 19rem;
+            width: 50%;
+        }
+    }
 }
 
 // Smartphones
 @include mediaSm {
-    main#home h1 {
-        margin-top: 5vh;
+    .hero{
+        .sm-heading {
+            font-size: 1.9rem;
+        }
+        .logo {
+            width: 40%;
+        }
     }
 
     .works {
         flex-wrap: wrap;
         .project {
-            width: 100%!important;
-            img {
-                // width: 100%;
-            }
+            width: 100%;
         }
-
     }
 
     footer {

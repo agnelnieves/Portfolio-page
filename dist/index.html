@@ -24,7 +24,12 @@
                 <div class="brand"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item current">
+                <li class="nav-item">
+                    <a href="mailto:agnelnieves@gmail.com" class="nav-link">
+                    Contact me
+                    </a>
+                </li>
+                <!-- <li class="nav-item current">
                     <a href="/" class="nav-link">
                     Home
                     </a>
@@ -43,29 +48,32 @@
                     <a href="work.html" class="nav-link">
                     Contact
                     </a>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </header>
 
     <main id="home">
         <section class="hero">
-            <h1 class="lg-heading">
-                Agnel <span class="text-secondary">Nieves</span>
-            </h1>
+            <img class="logo" src="img/logo.png" alt="Agnel Nieves logo">
             <h2 class="sm-heading">
-                Hello, my name is agnel nieves. I'm a <br>
-                Web Dev, Programmer & Designer
+                Hello, my name is agnel nieves. I'm a
             </h2>
+            <div id="typed-strings" class="typed-text">
+                <h2><strong>web</strong> Developer<span class="red-dot"></span>^1000</h2>
+                <h2><strong>Graphic</strong> Designer<span class="red-dot"></span>^1000</h2>
+                <h2><strong>UI/UX</strong> Designer<span class="red-dot"></span>^1000</h2>
+            </div>
+            <span id="typed" class="upper typed-text"></span>
             <div class="social-icons">
-                <a href="#!">
-                    <i class="fab fa-behance fa-2x"></i>
+                <a class="icon" href="https://twitter.com/agnelnieves" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-twitter"></i>
                 </a>
-                <a href="#!">
-                    <i class="fab fa-twitter fa-2x"></i>
+                <a class="icon" href="https://www.linkedin.com/in/agnelnieves/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href="#!">
-                    <i class="fab fa-linkedin fa-2x"></i>
+                <a class="icon" href="https://github.com/agnelnieves" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github-alt"></i>
                 </a>
             </div>
         </section>
@@ -73,18 +81,34 @@
         <section class="dark pb-0">
             <h1>Featured Works</h1>
             <div class="works">
-                <div class="project">
-                    <img src="img/borden.jpg" alt="BordenPR project image">
-                </div>
-                <div class="project">
-                    <img src="img/bpprCMS.jpg" alt="Banco Popular CMS preview">
-                </div>
-                <div class="project">
-                    <img src="img/stories-otg.jpg" alt="Stories On the go mobile app design">
-                </div>
-                <div class="project">
-                    <img src="img/foodiverse-prev.jpg" alt="Foodiverse app design preview">
-                </div>
+                <figure class="project">
+                    <img src="img/borden.jpg" alt="Borden PR Website preview"/>
+                    <figcaption>
+                        <h2>Borden PR</h2>
+                        <p>Web Development</p>
+                    </figcaption>
+                </figure>
+                <figure class="project">
+                    <img src="img/bpprCMS.jpg" alt="Banco Popular of Puerto Rico CMS"/>
+                    <figcaption>
+                        <h2>Banco Popular</h2>
+                        <p>CMS Design and development</p>
+                    </figcaption>
+                </figure>
+                <figure class="project">
+                    <img src="img/foodiverse-prev.jpg" alt="Foodiverse app design"/>
+                    <figcaption>
+                        <h2>Foodiverse</h2>
+                        <p>UI/UX Design</p>
+                    </figcaption>
+                </figure>
+                <figure class="project">
+                    <img src="img/stories-otg.jpg" alt="Stories on The Go app design"/>
+                    <figcaption>
+                        <h2>Stories on the go</h2>
+                        <p>UI/UX Design & Development</p>
+                    </figcaption>
+                </figure>
             </div>
         </section>
     </main>
@@ -100,19 +124,26 @@
                 <div class="column">
                     <ul class="social">
                         <li class="icon">
-                            <i class="fab fa-facebook-f"></i>
+                            <a href="https://twitter.com/agnelnieves" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-twitter"></i>
+                            </a>
                         </li>
                         <li class="icon">
-                            <i class="fab fa-facebook-f"></i>
+                            <a href="https://www.linkedin.com/in/agnelnieves/" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
                         </li>
                         <li class="icon">
-                            <i class="fab fa-facebook-f"></i>
+                            <a href="https://github.com/agnelnieves" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github-alt"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

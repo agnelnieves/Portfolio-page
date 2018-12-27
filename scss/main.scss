@@ -29,15 +29,6 @@ h2,
 h3 {
     margin: 0;
     font-weight: 400;
-
-    &.lg-heading{
-        font-size: 6rem;
-    }
-
-    &.sm-heading {
-        margin-bottom: 2rem;
-        padding: 0.2rem 1rem;
-    }
 }
 
 section {
@@ -76,6 +67,8 @@ header {
     color: $secondary-color;
 }
 
+.typed-cursor { font-size: 2rem; }
+
 main {
     height: 100%;
 
@@ -95,46 +88,38 @@ main {
 
     &#home {
         .hero{
-            height: 80vh;
+            text-align: center;
+            padding: 10rem 0;
+
+            .sm-heading {
+                padding: 0.2rem 1rem;
+            }
+
+            .typed-text {
+                font-size: 2rem;
+            }
+
+            .social-icons {
+                .icon {
+                    display: inline-block;
+                    padding: 7px 15px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    margin: 0 10px;
+                    // background-color: rgba($primary-color, $alpha: 0.25);
+                    @include easeOut;
+                    &:hover {
+                        background-color: $secondary-color;
+                        color: #fff;
+                        transform: translateY(-3px);
+                    }
+                    i {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
         }
     }
-}
-
-// About Page
-
-.bio-img {
-    width: 100%;
-}
-
-.about-info {
-    display: grid;
-    grid-gap: 30px;
-    grid-template-areas:
-    'bioimg bio bio'
-    'job1 job2 job3';
-    grid-template-columns: repear(3, 1fr);
-}
-
-.bio-img{
-    grid-area: bioimg;
-    margin: auto;
-}
-
-.bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-}
-
-.job-1 {
-    grid-area: job1;
-}
-
-.job-2 {
-    grid-area: job2;
-}
-
-.job-3 {
-    grid-area: job3;
 }
 
 .works {
@@ -144,9 +129,69 @@ main {
     display: flex;
 
     .project {
-        // height: 192px;
+        flex-grow: 1;
+        position: relative;
+        float: left;
+        overflow: hidden;
+        background-color: $primary-color;
+        text-align: center;
+        cursor: pointer;
+        margin: 0;
+
+        &:hover {
+            img {
+                opacity: 0.4;
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0) scale(1.08);
+
+            }
+            figcaption::before,
+            p {
+                opacity: 1;
+                -webkit-transform: translate3d(0,0,0);
+                transform: translate3d(0,0,0);
+            }
+            h2,
+            figcaption {
+                opacity: 1;
+            }
+        }
+
         img {
-            width: 100%;
+            position: absolute;
+            top: -12px;
+            left: -12px;
+            max-width: none;
+            width: -webkit-calc(100% + 60px);
+            width: calc(100% + 60px);
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+
+        h2 {
+            padding: 10px 0 0 0;
+            opacity: 0;
+            font-size: 2rem;
+        }
+
+        figcaption {
+            text-align: left;
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            margin: 0 auto;
+            opacity: 0;
+        }
+
+        p {
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: translate3d(-10px,0,0);
+            transform: translate3d(-10px,0,0);
+            margin: 0;
         }
     }
 }
