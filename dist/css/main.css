@@ -182,6 +182,10 @@ footer {
             background-color: #ef2d56;
             color: #fff;
             transform: translateY(-2.5px); }
+            footer .container .column .social .icon:hover a {
+              color: #fff; }
+          footer .container .column .social .icon a {
+            color: #79818a; }
 
 .pb-0 {
   padding-bottom: 0 !important; }
