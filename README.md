@@ -43,7 +43,7 @@ npm run sass
 
 Run your preferred live server on the dist folder.
 
-## Development Build
+## Production Build
 
 First run the following command; this will generate the css files on the dist folder.
 
